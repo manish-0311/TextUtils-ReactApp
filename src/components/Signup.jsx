@@ -8,7 +8,7 @@ export default function Signup({ showAlert }) {
         password: "",
         cpassword: "",
     });
-    const host = "http://localhost:5000";
+    const host = import.meta.env.VITE_HOST;
     let navigate = useNavigate();
 
     const onChange = (event) => {

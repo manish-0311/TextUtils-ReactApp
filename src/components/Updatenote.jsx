@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import NoteContext from "../contexts/notes/noteContext";
-
+import PropTypes from "prop-types";
 export default function Updatenote({ showAlert, modalRef, newnote, setNewnote }) {
     // getting the context from noteContext
     const context = useContext(NoteContext);
@@ -121,3 +121,10 @@ export default function Updatenote({ showAlert, modalRef, newnote, setNewnote })
         </>
     );
 }
+
+Updatenote.propTypes = {
+    showAlert: PropTypes.func.isRequired,
+    modalRef: PropTypes.object.isRequired,
+    newnote: PropTypes.object.isRequired,
+    setNewnote: PropTypes.func.isRequired,
+};

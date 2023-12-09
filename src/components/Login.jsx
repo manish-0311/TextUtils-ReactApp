@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types"
 export default function Login({ showAlert }) {
-    const [credentials, setCredentials] = useState({ email: "", password: "" });
-    const host = "http://localhost:5000";
+    const [credentials, setCredentials] = useState({ email: "", password: "" });    
+    const host = import.meta.env.VITE_HOST;
     let navigate = useNavigate();
 
     const onChange = (event) => {
