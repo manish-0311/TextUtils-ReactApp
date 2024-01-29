@@ -1,4 +1,4 @@
-# myNote - Online Note Keeping Web App
+# myNote - Note Keeping Web App
 [View project](https://mynote-00.netlify.app/)
 myNote is a web application that allows users to store and access their notes online from anywhere at any time. Whether you're on your computer, tablet, or smartphone, myNote provides a seamless experience for managing your notes.
 
